@@ -1,7 +1,6 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import {observer} from 'mobx-react-lite';
 import '../index.css';
-import {data} from '../utils/constans.js'
 import Header from './Header';
 import Main from './Main';
 import Footer from './Footer';
@@ -29,17 +28,6 @@ function Page() {
     card.getCards()
   }, [])
 
-  function newCards() {
-    const newCards = data.map((item) => {
-      return {
-        name: item.name,
-        link: item.link,
-        likes: item.likes
-      }
-    })
-    setCards(newCards)
-  }
-
   function handleEditAvatarClick() {
     setAvatarPopupOpen(true)
 }
@@ -62,13 +50,6 @@ function Page() {
     setPlacePopupOpen(false)
     setDeleteCardPopupOpen(false)
     setSelectedCard(undefined)
-  }
-
-  function handleCardDelete(card) {
-    const filtredCards = cards.filter((item) => {
-      return item.name !== card.name
-    })
-    setCards(filtredCards)
   }
 
   function handleAddPlaceSubmit(newCard) {
