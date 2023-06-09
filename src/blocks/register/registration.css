@@ -1,0 +1,24 @@
+.registration {
+  margin: 0;
+  float: right;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.registration:hover {
+  opacity: .6;
+  transition: opacity .5s ease;
+}
+
+@media (max-width: 550px) {
+  .registration {
+      padding-right: 30px;
+      font-size: 14px;
+      line-height: 17px;
+  }
+}

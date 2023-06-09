@@ -1,0 +1,12 @@
+.register__submit {
+  max-width: 358px;
+  height: 50px;
+  margin-top: 216px;
+  background-color: #FFFFFF;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+}

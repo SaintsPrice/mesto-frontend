@@ -1,0 +1,9 @@
+.register__sign {
+  text-decoration: none;
+  color: #FFFFFF
+}
+
+.register__sign:hover {
+  opacity: .6;
+  transition: opacity .5s ease;
+}

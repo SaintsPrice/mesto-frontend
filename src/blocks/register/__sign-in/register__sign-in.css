@@ -1,0 +1,11 @@
+.register__sign-in {
+  max-width: fit-content;
+  margin: auto;
+  padding: 15px 0 60px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+}

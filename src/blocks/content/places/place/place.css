@@ -1,0 +1,10 @@
+.place {
+    max-width: 282px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    border-radius: 10px;
+    position: relative;
+}

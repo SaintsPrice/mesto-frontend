@@ -1,0 +1,6 @@
+.popup__save_hover:hover {
+  background-color: #0f0e0e;
+  color: #ffffffb2;
+  transition: background-color 0.3s ease-in;
+  transition: color 0.3s ease-in
+}
