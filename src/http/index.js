@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-export const API_URL = 'http://localhost:5005'
+export const API_URL = 'https://mesto-backend-abae7ealb-saintsprice.vercel.app/'
 
 const api = axios.create({
   withCredentials: true,
