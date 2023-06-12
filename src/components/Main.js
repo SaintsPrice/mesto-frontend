@@ -10,7 +10,6 @@ function Main(props) {
     profile.getUser(auth.user.id)
   }, [])
 
-  console.log(profile.userProfile)
   return (
     <main className="content">
         <section className="profile">

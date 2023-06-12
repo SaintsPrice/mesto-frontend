@@ -56,8 +56,6 @@ function Page() {
     setCards([newCard, ...cards])
   }
 
-  console.log(card.cards)
-
   return (
     <>
       

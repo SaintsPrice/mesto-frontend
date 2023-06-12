@@ -21,21 +21,13 @@ class CardStore {
   async createCard(name, link) {
     const response = await CardService.addCard(name, link)
 
-    console.log(response)
-
     this.setNewCard(response.data)
-
-    console.log(this.cards)
   }
 
   async getCards() {
     const response = await CardService.getUsersCard()
 
-    console.log(response)
-
     this.setCards(response.data)
-
-    console.log(this.cards)
   }
 
   async likeCard(cardId) {
@@ -47,8 +39,6 @@ class CardStore {
     })
     .reverse())
 
-    console.log(response)
-
   }
 
   async dislikeCard(cardId) {
@@ -59,8 +49,6 @@ class CardStore {
       return card._id === response.data._id ? response.data : card
     })
     .reverse())
-
-    console.log(response)
 
   }
 

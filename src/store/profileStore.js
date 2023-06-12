@@ -15,10 +15,8 @@ class ProfileStore {
   async getUser(userId) {
     try {
       const response = await ProfileService.editProfile(userId)
-      console.log(response)
 
       this.setUserProfile(response.data)
-      console.log(this.userProfile)
     }
     catch(e) {
       console.log(e.response.data.message)
@@ -28,10 +26,8 @@ class ProfileStore {
   async updateUser(name, about) {
     try {
       const response = await ProfileService.updateProfile(name, about)
-      console.log(response)
 
       this.setUserProfile(response.data)
-      console.log(this.userProfile)
     }
     catch(e) {
       console.log(e.response.data.message)
@@ -41,10 +37,8 @@ class ProfileStore {
   async updateAvatar(avatar) {
     try {
       const response = await ProfileService.updateAvatar(avatar)
-      console.log(response)
 
       this.setUserProfile(response.data)
-      console.log(this.userProfile)
     }
     catch(e) {
       console.log(e.response.data.message)

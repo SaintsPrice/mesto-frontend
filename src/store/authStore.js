@@ -21,7 +21,6 @@ class AuthStore {
   async login(email, password) {
     try {
       const response = await AuthService.login(email, password)
-      console.log(response)
       localStorage.setItem('token', response.data.accessToken)
 
       this.setAuth(true);
@@ -35,7 +34,6 @@ class AuthStore {
   async registration(email, password) {
     try {
       const response = await AuthService.registration(email, password)
-      console.log(response)
       localStorage.setItem('token', response.data.accessToken)
 
       this.setAuth(true);
@@ -61,8 +59,7 @@ class AuthStore {
 
   async checkAuth() {
     try {
-      const response = await axios.get(`${API_URL}/refresh`, {withCredentials: true})
-      console.log(response)
+      const response = await axios.post(`${API_URL}/refresh`, {withCredentials: true})
       localStorage.setItem('token', response.data.accessToken)
 
       this.setAuth(true);
